@@ -1,0 +1,12 @@
+{% extends 'accounts/main.html' %}
+
+
+{% block content %}
+<form action="" method="POST">
+    {% csrf_token %}
+    <h3 class="display-5 text-center">
+        Confirm you want to delete "{{order}}" from the list
+    </h3>
+    <button class="btn btn-block btn-danger mt-3 " type="submit" name="Submit"> Delete </button>
+</form>
+{% endblock %}
